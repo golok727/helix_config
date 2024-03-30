@@ -2,3 +2,6 @@ theme = 'golok'
 
 [keys.insert]
 "C-[" = "normal_mode"
+
+[editor.cursor-shape]
+insert = 'bar'

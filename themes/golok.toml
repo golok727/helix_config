@@ -1,4 +1,4 @@
 inherits = "fleet_dark"
 
-"ui.background" = {}
+"ui.background" = { bg = "#00000033" }
 
