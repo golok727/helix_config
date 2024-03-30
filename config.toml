@@ -1,7 +1,36 @@
-theme = 'golok'
+theme = "golok"
+
+[keys.normal."C-\\"]
+c = ":config-open"
+r = ":config-reload"
+
+[keys.normal]
+# Buffer line
+tab = ":buffer-next"
+S-tab = ":buffer-previous"
+A-q = ":buffer-close"
+
+# Pickers
+C-p = "file_picker"
+A-p = "buffer_picker"
+C-A-p = "symbol_picker"
+"=" = "increment"
+"minus" = "decrement"
+
+[keys.select]
+"=" = "increment"
+"minus" = "decrement"
 
 [keys.insert]
 "C-[" = "normal_mode"
 
+[editor]
+bufferline = "multiple"
+
 [editor.cursor-shape]
-insert = 'bar'
+insert = "bar"
+
+[editor.statusline]
+mode.normal = "NORMAL"
+mode.insert = "INSERT"
+mode.select = "SELECT"
