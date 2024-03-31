@@ -11,6 +11,8 @@ C-s = ":w!"
 tab = ":buffer-next"
 S-tab = ":buffer-previous"
 A-q = ":buffer-close"
+"C-]" = "page_down"
+"C-[" = "page_up"
 
 # Pickers
 C-p = "file_picker"
