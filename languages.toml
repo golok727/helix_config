@@ -27,6 +27,14 @@ scss = { validate = { enable = true } }
 less = { validate = { enable = true } }
 provideFormatter = true
 
+[language-server.rust-analyzer.config.check]
+command = "clippy" 
+
+[[language]]
+name = "rust"
+language-servers = ["rust-analyzer"]
+formatter = { command = "prettier", args = ["--parser", "rust"]}
+auto-format = true
 
 [[language]]
 name = "typescript"
