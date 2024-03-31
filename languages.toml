@@ -33,7 +33,7 @@ command = "clippy"
 [[language]]
 name = "rust"
 language-servers = ["rust-analyzer"]
-formatter = { command = "prettier", args = ["--parser", "rust"]}
+# formatter = { command = "prettier", args = ["--parser", "rust"]} # Don't know why this is not working
 auto-format = true
 
 [[language]]

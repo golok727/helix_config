@@ -1,11 +1,13 @@
-theme = "golok"
+theme = "golok_2"
 
-[keys.normal."C-\\"]
+[keys.normal."\\"]
 c = ":config-open"
 r = ":config-reload"
+q = ":q"
+R = ":sh cargo run"
 
 [keys.normal]
-# Buffer line
+C-s = ":w!"
 tab = ":buffer-next"
 S-tab = ":buffer-previous"
 A-q = ":buffer-close"
@@ -26,11 +28,40 @@ C-A-p = "symbol_picker"
 
 [editor]
 bufferline = "multiple"
+line-number = "relative"
+shell = ["bash", "-c"]
 
 [editor.cursor-shape]
 insert = "bar"
+normal = "block"
+select = "underline"
 
 [editor.statusline]
 mode.normal = "NORMAL"
 mode.insert = "INSERT"
 mode.select = "SELECT"
+
+[editor.indent-guides]
+render = false 
+character = "┆"
+skip-levels = 1
+
+
+# Extras
+# [editor.whitespace]
+# render = "none"
+
+# [editor.whitespace.render]
+# space = "none"
+# tab = "all"
+# nbsp = "none"
+# nnbsp = "none"
+# newline = "none"
+
+# [editor.whitespace.characters]
+# space = "·"
+# nbsp = "⍽"
+# nnbsp = "␣"
+# tab = "→"
+# newline = "⏎"
+# tabpad = "·"
