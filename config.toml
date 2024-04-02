@@ -1,10 +1,10 @@
-theme = "golok_2"
+theme = "golok"
 
 [keys.normal."\\"]
-c = ":config-open"
-r = ":config-reload"
+c = { o = ":config-open", r = ":config-reload" }
+e = { r = ":reload", R=":reload-all", l=":lsp-restart" }
 q = ":q"
-R = ":sh cargo run"
+C = { r = ":sh cargo run" }
 
 [keys.normal]
 C-s = ":w!"
