@@ -1,7 +1,7 @@
 theme = "golok"
 
 [keys.normal."\\"]
-c = { o = ":config-open", r = ":config-reload" }
+c = {  o = ":config-open", r = ":config-reload" }
 e = { r = ":reload", R=":reload-all", l=":lsp-restart" }
 q = ":q"
 C = { r = ":sh cargo run" }
@@ -31,7 +31,7 @@ C-A-p = "symbol_picker"
 [editor]
 bufferline = "multiple"
 line-number = "relative"
-shell = ["bash", "-c"]
+shell = ["C:\\Program Files\\Git\\bin\\bash.exe", "-c"]
 
 [editor.cursor-shape]
 insert = "bar"
