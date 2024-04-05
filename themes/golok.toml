@@ -11,6 +11,8 @@
 "ui.cursor.primary" = { bg = "fg1", fg = "bg1" } # The primary cursor when there are multiple (shift-c).
 "ui.cursor.match" = { fg = "green", modifiers = ["bold"] } # The matching parentheses of that under the cursor.
 
+"ui.statusline.active" = { fg = "green" }
+
 "ui.selection" = { bg = "bg3" } # All currently selected text.
 "ui.selection.primary" = { bg = "bg4" } # The primary selection when there are multiple.
 "ui.cursorline.primary" = { bg = "bg3" } # The line of the primary cursor (if cursorline is enabled)
