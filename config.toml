@@ -27,6 +27,7 @@ C-A-p = "symbol_picker"
 
 [keys.insert]
 "C-[" = "normal_mode"
+"C-space" = "completion"
 
 [editor]
 bufferline = "multiple"
