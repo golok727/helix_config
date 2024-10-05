@@ -5,6 +5,7 @@ name = "rust"
 language-servers = ["rust-analyzer"]
 formatter = { command = "rustfmt" }
 auto-format = true
+
 [language-server.rust-analyzer]
 command = "rust-analyzer"
 
@@ -38,12 +39,13 @@ formatter = { command = "biome", args = [ "format", "--stdin-file-path", "a.ts" 
 name = "jsx"
 auto-format = true
 language-servers = [ { name = "biome" }, { name = "typescript-language-server", except-features = [ "format" ] } ]
-formatter = { command = "biome", args = [ "format", "--stdin-file-path", "a.ts" ] }
+formatter = { command = "biome", args = [ "format", "--stdin-file-path", "a.jsx" ] }
 
 [[language]]
 name = "json"
 language-servers = [ { name = "biome" }, { name = "vscode-json-language-server", except-features = [ "format" ] } ]
-formatter = { command = "biome", args = [ "format", "--stdin-file-path", "a.ts" ] }
+formatter = { command = "biome", args = [ "format", "--stdin-file-path", "a.json" ] }
+
 
 [[language]]
 name = "html"
@@ -52,5 +54,6 @@ auto-format = true
 
 [[language]]
 name = "css"
-language-servers = [ "vscode-css-language-server", "emmet-ls" ]
+language-servers = [ {name = "biome"}, {name = "vscode-css-language-server", except-features = ["format"] }, {name = "emmet-ls" }]
 auto-format = true
+formatter = { command = "biome", args = ["format", "--stdin-file-path", "a.css"] } 
