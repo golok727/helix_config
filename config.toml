@@ -33,6 +33,7 @@ C-A-p = "symbol_picker"
 bufferline = "multiple"
 line-number = "relative"
 shell = ["C:\\Program Files\\Git\\bin\\bash.exe", "-c"]
+true-color = true
 
 [editor.cursor-shape]
 insert = "bar"
