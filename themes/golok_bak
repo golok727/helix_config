@@ -69,17 +69,17 @@
 # These keys match tree-sitter scopes.
 
 "special" = { fg = "fg2", modifiers = ["bold"]   } # Special symbols e.g `?` in Rust, `...` in Hare.
-"attribute" = { fg = "red", modifiers = []   } # Class attributes, html tag attributes.
+"attribute" = { fg = "red", modifiers = ["italic"]   } # Class attributes, html tag attributes.
 
 "type" = { fg = "cyan", modifiers = []   } # Variable type, like integer or string, including program defined classes, structs etc..
-"type.builtin" = { fg = "orange", modifiers = [ ]   } # Primitive types of the language (string, int, float).
+"type.builtin" = { fg = "orange", modifiers = [ "italic"]   } # Primitive types of the language (string, int, float).
 "type.enum.variant" = { fg = "orange", modifiers = []   }
 
-"constructor" = { fg = "green", modifiers = []   } # Constructor method for a class or struct.
+"constructor" = { fg = "green", modifiers = ["italic"]   } # Constructor method for a class or struct.
 
-"constant" = { fg = "orange", modifiers = []   } # Constant value
+"constant" = { fg = "orange", modifiers = ["italic"]   } # Constant value
 "constant.builtin" = { fg = "yellow" } # Special constants like `true`, `false`, `none`, etc.
-"constant.builtin.boolean" = { fg = "yellow", modifiers = ["bold", ]   } # True or False.
+"constant.builtin.boolean" = { fg = "yellow", modifiers = ["bold", "italic"]   } # True or False.
 "constant.character" = { fg = "yellow", modifiers = ["bold"]   } # Constant of character type.
 "constant.character.escape" = { fg = "blue", modifiers = ["bold"] } # escape codes like \n.
 "constant.numeric"  = { fg = "orange", modifiers = []   } # constant integer or float value.
@@ -89,13 +89,13 @@
 "string.special" = { fg = "yellow", modifiers = ["bold"] } # Strings containing a path, URL, etc.
 "string.special.url" = { fg = "yellow", modifiers = ["bold", "underline"] } # String containing a web URL.
 
-"comment" = { fg = "comment", modifiers = [] } # This is a comment.
-"comment.block.documentation" = { fg = "comment", modifiers = [] } # Doc comments, e.g '///' in rust.
+"comment" = { fg = "comment", modifiers = ["italic"] } # This is a comment.
+"comment.block.documentation" = { fg = "comment", modifiers = ["italic"] } # Doc comments, e.g '///' in rust.
 
-"variable" = { fg = "white", modifiers = [] }  # Variable names.
-"variable.builtin" = { fg = "orange-bright", modifiers = []   } # Language reserved variables: `this`, `self`, `super`, etc.
-"variable.parameter" = { fg = "params", modifiers = []   } # Function parameters.
-"variable.other.member" = { fg = "white", modifiers = []   } # Fields of composite data types (e.g. structs, unions).
+"variable" = { fg = "white", modifiers = ["italic"] }  # Variable names.
+"variable.builtin" = { fg = "orange-bright", modifiers = ["italic"]   } # Language reserved variables: `this`, `self`, `super`, etc.
+"variable.parameter" = { fg = "params", modifiers = ["italic"]   } # Function parameters.
+"variable.other.member" = { fg = "white", modifiers = ["italic"]   } # Fields of composite data types (e.g. structs, unions).
 
 "label" = { fg = "cyan", modifiers = ["bold"]   } # lifetimes - Loop labels, among other things.
 
@@ -104,31 +104,31 @@
 # "punctuation.bracket" = { fg = "fg2" } # Parentheses, angle brackets, etc.
 # "punctuation.special" = { fg = "fg2" } # String interpolation brackets
 
-"keyword" = { fg = "red", modifiers = [] } # Language reserved keywords.
-"keyword.control" = { fg = "orange", modifiers = [] } # Control keywords.
-"keyword.control.conditional" = { fg = "orange-light", modifiers = []  } # `if`, `else`, `elif`.
-"keyword.control.repeat" = { fg = "red", modifiers = []  } # `for`, `while`, `loop`.
-"keyword.control.import" = { fg = "export-import", modifiers = []  } # `import`, `export` `use`.
-"keyword.control.return" = { fg = "magenta-bright", modifiers = []   } # `return` in most languages.
-"keyword.control.exception" = { fg = "orange-light", modifiers = []   } # `try`, `catch`, `raise`/`throw` and related.
-"keyword.operator" = { fg = "red", modifiers = [] } # 'or', 'and', 'in'.
+"keyword" = { fg = "red", modifiers = ["italic"] } # Language reserved keywords.
+"keyword.control" = { fg = "orange", modifiers = ["italic"] } # Control keywords.
+"keyword.control.conditional" = { fg = "orange-light", modifiers = ["italic"]  } # `if`, `else`, `elif`.
+"keyword.control.repeat" = { fg = "red", modifiers = ["italic"]  } # `for`, `while`, `loop`.
+"keyword.control.import" = { fg = "export-import", modifiers = ["italic"]  } # `import`, `export` `use`.
+"keyword.control.return" = { fg = "magenta-bright", modifiers = ["italic"]   } # `return` in most languages.
+"keyword.control.exception" = { fg = "orange-light", modifiers = ["italic"]   } # `try`, `catch`, `raise`/`throw` and related.
+"keyword.operator" = { fg = "red", modifiers = ["italic"] } # 'or', 'and', 'in'.
 "keyword.directive" = { fg = "pink", modifiers = ["bold"]   } # Preprocessor directives (#if in C...).
-"keyword.function" = { fg = "red", modifiers = []   } # The keyword to define a funtion: 'def', 'fun', 'fn'.
-"keyword.storage" = { fg = "pink", modifiers = []   } # Keywords describing how things are stored
-"keyword.storage.type" = { fg = "red", modifiers = []   } #  The type of something, class, function, var, let, etc.
-"keyword.storage.modifier" = { fg = "pink", modifiers = [] } # Storage modifiers like static, mut, const, ref, etc.
+"keyword.function" = { fg = "red", modifiers = ["italic"]   } # The keyword to define a funtion: 'def', 'fun', 'fn'.
+"keyword.storage" = { fg = "pink", modifiers = ["italic"]   } # Keywords describing how things are stored
+"keyword.storage.type" = { fg = "red", modifiers = ["italic"]   } #  The type of something, class, function, var, let, etc.
+"keyword.storage.modifier" = { fg = "pink", modifiers = ["italic"] } # Storage modifiers like static, mut, const, ref, etc.
 
 "operator" = {  fg = "fg2" } # Logical, mathematical, and other operators.
 
 "function" = { fg = "green", modifiers = []  }
 "function.builtin" = { fg = "red", modifiers = []  }
-"function.macro" = { fg = "macros", modifiers = []  }
-"function.special" = { fg = "blue", modifiers = []  } # Preprocessor function in C.
-"function.method" = { fg = "green", modifiers = []  } # Class / Struct methods.
+"function.macro" = { fg = "macros", modifiers = ["italic"]  }
+"function.special" = { fg = "blue", modifiers = ["italic"]  } # Preprocessor function in C.
+"function.method" = { fg = "green", modifiers = ["italic"]  } # Class / Struct methods.
 
-"tag" = { fg = "green", modifiers = []  } # As in <body> for html, css tags.
+"tag" = { fg = "green", modifiers = ["italic"]  } # As in <body> for html, css tags.
 
-"namespace" = { fg = "blue", modifiers = []  } # Namespace or module identifier.
+"namespace" = { fg = "blue", modifiers = ["italic"]  } # Namespace or module identifier.
 
 
 # Diff ==============================
