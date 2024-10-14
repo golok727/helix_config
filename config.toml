@@ -45,27 +45,27 @@ mode.normal = "NORMAL"
 mode.insert = "INSERT"
 mode.select = "SELECT"
 
-[editor.indent-guides]
-render = false 
-character = "┆"
-skip-levels = 1
-
 
 # Extras
 # [editor.whitespace]
 # render = "none"
 
-# [editor.whitespace.render]
-# space = "none"
-# tab = "all"
-# nbsp = "none"
-# nnbsp = "none"
-# newline = "none"
+[editor.whitespace.render]
+space = "all"
+tab = "none"
+nbsp = "none"
+nnbsp = "none"
+newline = "none"
 
-# [editor.whitespace.characters]
-# space = "·"
-# nbsp = "⍽"
-# nnbsp = "␣"
-# tab = "→"
-# newline = "⏎"
-# tabpad = "·"
+[editor.whitespace.characters]
+space = "·"
+nbsp = "⍽"
+nnbsp = "␣"
+tab = "→"
+newline = "⏎"
+tabpad = "·"
+
+[editor.indent-guides]
+render = true
+character = "▏" # Some characters that work well: "▏", "┆", "┊", "⸽"
+skip-levels = 1
