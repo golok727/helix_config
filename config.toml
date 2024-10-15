@@ -38,7 +38,7 @@ true-color = true
 [editor.cursor-shape]
 insert = "bar"
 normal = "block"
-select = "underline"
+select = "block"
 
 [editor.statusline]
 mode.normal = "NORMAL"
