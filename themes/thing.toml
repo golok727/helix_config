@@ -1,4 +1,4 @@
-inherits = "catppuccin_mocha"
+inherits = "ayu_evolve"
 
 "ui.background" = {  } 
 "ui.bufferline.background" = { }
