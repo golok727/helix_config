@@ -1,4 +1,5 @@
-theme = "golok"
+# theme = "golok"
+theme = "catppuccin_mocha"
 
 [keys.normal."\\"]
 c = {  o = ":config-open", r = ":config-reload" }
@@ -51,7 +52,7 @@ mode.select = "SELECT"
 # render = "none"
 
 [editor.whitespace.render]
-space = "all"
+space = "none"
 tab = "none"
 nbsp = "none"
 nnbsp = "none"
