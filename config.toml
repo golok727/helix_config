@@ -1,6 +1,6 @@
 # theme = "golok"
 # theme = "catppuccin_mocha"
-theme = "flexoki_dark"
+theme = "tokyonight"
 
 [keys.normal."\\"]
 c = {  o = ":config-open", r = ":config-reload" }
