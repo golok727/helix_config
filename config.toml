@@ -1,10 +1,10 @@
 # theme = "golok"
-# theme = "catppuccin_mocha"
-theme = "tokyonight"
+# theme = "tokyonight"
+theme = "catppuccin_dark"
 
 [keys.normal."\\"]
-c = {  o = ":config-open", r = ":config-reload" }
-e = { r = ":reload", R=":reload-all", l=":lsp-restart" }
+c = { o = ":config-open", r = ":config-reload" }
+e = { r = ":reload", R = ":reload-all", l = ":lsp-restart" }
 q = ":q"
 C = { r = ":sh cargo run" }
 
