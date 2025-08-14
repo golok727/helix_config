@@ -1,6 +1,6 @@
 # theme = "golok"
 # theme = "tokyonight"
-theme = "catppuccin_dark"
+theme = "ao"
 
 [keys.normal."\\"]
 c = { o = ":config-open", r = ":config-reload" }
@@ -13,8 +13,8 @@ C-s = ":w!"
 tab = ":buffer-next"
 S-tab = ":buffer-previous"
 A-q = ":buffer-close"
-"C-]" = "goto_next_paragraph"
-"C-[" = "goto_prev_paragraph"
+# "C-]" = "goto_next_paragraph"
+# "C-[" = "goto_prev_paragraph"
 
 # Pickers
 C-p = "file_picker"
@@ -71,3 +71,4 @@ tabpad = "·"
 render = true
 character = "▏" # Some characters that work well: "▏", "┆", "┊", "⸽"
 skip-levels = 1
+}
